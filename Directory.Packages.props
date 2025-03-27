@@ -21,6 +21,8 @@
     <PackageVersion Include="BlazorInputFile" Version="0.2.0" />
     <PackageVersion Include="Blazored.LocalStorage" Version="4.5.0" />
     <PackageVersion Include="BuildBundlerMinifier" Version="3.2.449" PrivateAssets="All" />
+    <PackageVersion Include="BuildBundlerMinifier2022" Version="2.9.11" />
+    <PackageVersion Include="BundlerMinifier.Core" Version="3.2.449" />
     <PackageVersion Include="FastEndpoints" Version="5.34.0" />
     <PackageVersion Include="FastEndpoints.Swagger" Version="5.34.0" />
     <PackageVersion Include="FluentValidation" Version="11.11.0" />

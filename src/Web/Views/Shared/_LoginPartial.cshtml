@@ -1,10 +1,17 @@
 ﻿@if (Context!.User!.Identity!.IsAuthenticated)
 {
+
     <section class="col-lg-4 col-md-5 col-xs-12">
         <div class="esh-identity">
             <form asp-area="Identity" asp-page="/Account/Logout" method="post" id="logoutForm" class="navbar-right">
                 <section class="esh-identity-section">
-                    <div class="esh-identity-name">@Context.User.Identity.Name</div>
+                    <div class="esh-identity-name">
+                        @if (Context!.User!.Identity!.Name!.IndexOf("demouser") != -1)
+                        {
+                            <span>&#128570;</span>
+                        }
+                            @Context.User.Identity.Name
+                        </div>
                     <img class="esh-identity-image" src="~/images/arrow-down.png">
                 </section>
                 <section class="esh-identity-drop">
